@@ -1,0 +1,93 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+  width: 50%;
+  position: relative;
+  line-height: 500%;
+}
+ul {
+  list-style: none;
+}
+button{
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+}
+
+.sendItBack,
+.cashIt,
+.tossIt,
+.serveIt{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+.tossIt{
+  background-image: url("../images/tossIt.png");
+  background: red;
+  right: 0;
+  background-size: contain;
+  border: raised;
+}
+
+.serveIt{
+  right: 105px;
+  background: green;
+  background-image: url("../images/serveIt.png");
+  background-size: contain;
+  border: raised;
+}
+
+.sendItBack{
+  border: raised;
+  background-image: url("../images/sendItBack.jpg");
+  right: 105px;
+  background-size: contain;
+  background: red;
+}
+
+.cashIt{
+  background-image: url("../images/cashIt.jpg");
+  border: raised;
+  background: green;
+  background-size: contain;
+  right: 0;
+}
+
+#kitchen{
+  position: fixed;
+  left: 0;
+  width: 49%;
+  background-image: url("../images/bobsKitchen.png");
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#diningRoom{
+  position: fixed;
+  right: 0;
+  width: 49%;
+  background-image: url("../images/diningRoom.jpg");
+  height: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

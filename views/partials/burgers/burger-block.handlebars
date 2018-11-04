@@ -1,9 +1,21 @@
 <li>
-	{{burger}}
+	{{name}}
+	{{#if devoured}}
+    
+	<img src="assets/images/burgers/1.png" alt="it's a little a burger" class="icon img">
+	
+	<button class="change-devoured serveIt" data-id="{{id}}" data-newDevoured="{{devoured}}">SERVE IT!</button>
+	
+	<button class="delete-burger tossIt" data-id="{{this.id}}">YOU BURNED IT!</button>
 
-	<button class="change-devoured" data-id="{{id}}" data-devoured="{{devoured}}">
-		{{#if devoured}}TIME TO EAT!{{else}}DEVOURED!{{/if}}
-	</button>
+	{{else}}
+    
+	<img src="assets/images/burgers/eaten.jpg" alt="it's a little bitten burger" class="icon img">
+	
+	<button class="change-devoured sendItBack" data-id="{{id}}" data-newDevoured="{{devoured}}">SEND IT BACK!</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+	<button class="delete-burger cashIt" data-id="{{this.id}}">CHECK PLEASE!</button>
+	
+	{{/if}}
+
 </li>

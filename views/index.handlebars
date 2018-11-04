@@ -1,38 +1,39 @@
 <h1>Burgers!</h1>
 
-<h2>Burgers that have not been devoured!</h2>
-
-<ul>
-  {{#each burger}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that have been devoured!</h2>
-
-<ul>
-  {{#each burger}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
+<h2>ADD AN ORDER</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Burger Name:</label>
+    <label for="ca">Order Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Yet to be devoured
-  </div>
 
-  <button type="submit">Add Burger</button>
+  <button type="submit">Add Order</button>
 </form>
+
+<div>
+  <section id="kitchen">
+  <h2>Kitchen</h2>
+  <ul>
+    {{#each burgers}}
+      {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+      {{/unless}}
+    {{/each}}
+  </ul>
+  </section>
+
+  <section id="diningRoom">
+  <h2>Dining Room</h2>
+  <ul>
+    {{#each burgers}}
+      {{#if devoured}}
+        {{> burgers/burger-block devoured=false}}
+      {{/if}}
+    {{/each}}
+  </ul>
+  </section>
+</div>
+
+<div id="appender"></div>
