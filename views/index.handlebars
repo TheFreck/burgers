@@ -1,24 +1,17 @@
-<h1>Burgers!</h1>
+<h1 id="title">Burgers Burgers and More Burgers!</h1>
+<br>
+<button id="menuBtn">MENU</button>
+<br>
+<br>
 
-<h2>ADD AN ORDER</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Order Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-
-  <button type="submit">Add Order</button>
-</form>
 
 <div>
   <section id="kitchen">
   <h2>Kitchen</h2>
   <ul>
     {{#each burgers}}
-      {{#unless devoured}}
-        {{> burgers/burger-block devoured=true}}
+      {{#unless served}}
+        {{> burgers/burger-block served=true}}
       {{/unless}}
     {{/each}}
   </ul>
@@ -26,14 +19,28 @@
 
   <section id="diningRoom">
   <h2>Dining Room</h2>
+  <div>
   <ul>
     {{#each burgers}}
-      {{#if devoured}}
-        {{> burgers/burger-block devoured=false}}
+      {{#if served}}
+        {{> burgers/burger-block served=false}}
       {{/if}}
     {{/each}}
   </ul>
+  </div>
   </section>
 </div>
 
-<div id="appender"></div>
+<div id="menu" class="hide"></div>
+<div id="orderName" class="hide">
+  <h2>You ordered: <span id="burgerOrder">BURGER</span></h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="ca">What's the name on the order?</label>
+      <input type="text" id="ca" name="name">
+    </div>
+
+    <button type="submit">Add Order</button>
+  </form>
+</div>

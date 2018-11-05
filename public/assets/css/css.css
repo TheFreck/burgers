@@ -1,15 +1,23 @@
 li {
   padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-  width: 50%;
+  margin: 5%;
+  background: #cc9c5e;
+  width: 85%;
+  height: 100px;
   position: relative;
   line-height: 500%;
+  opacity: .8;
 }
 ul {
   list-style: none;
 }
 button{
+}
+h2{
+  font-size: 44px;
+}
+body{
+  background: rgb(172, 140, 0);
 }
 
 .label {
@@ -42,52 +50,111 @@ button{
 }
 
 .tossIt{
-  background-image: url("../images/tossIt.png");
   background: red;
-  right: 0;
+  background-image: url("../images/tossIt.png");
   background-size: contain;
+  right: 0;
   border: raised;
 }
 
 .serveIt{
-  right: 105px;
   background: green;
   background-image: url("../images/serveIt.png");
   background-size: contain;
   border: raised;
+  right: 105px;
 }
 
 .sendItBack{
-  border: raised;
-  background-image: url("../images/sendItBack.jpg");
-  right: 105px;
-  background-size: contain;
   background: red;
+  background-image: url("../images/sendItBack.png");
+  background-size: auto 100%;
+  border: raised;
+  right: 105px;
 }
 
 .cashIt{
-  background-image: url("../images/cashIt.jpg");
-  border: raised;
   background: green;
+  background-image: url("../images/cashIt.png");
   background-size: contain;
+  border: raised;
   right: 0;
+}
+
+.show{
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+}
+.hide{
+  display: none;
+}
+
+.menuImg,
+.menuItem,
+.menuName,
+.menuDescription{
+  margin: 5%;
+}
+
+.menuImg{
+  width: 210px;
+  height: 210px;
+  border: ridge;
+  display: block;
+}
+.menuItem{
+  position: relative;
+  width: 90%;
+  left: 5%;
+}
+.menuName{
+  font-size: 34px;
+  position: absolute;
+  line-height: 1;
+}
+
+
+#menuBtn{
+  margin-left: 5%;
+  width: 100px;
+  height: 65px;
+}
+#orderName{
+  width: 600px;
+  height: 500px;
+  background: darkred;
+  position: fixed;
+  top: 15%;
+  width: 50%;
+  left: 25%;
 }
 
 #kitchen{
   position: fixed;
-  left: 0;
-  width: 49%;
-  background-image: url("../images/bobsKitchen.png");
+  left: 14%;
+  width: 35%;
   height: 80%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url("../images/stainlessSteel.jpg");
 }
 #diningRoom{
   position: fixed;
-  right: 0;
-  width: 49%;
-  background-image: url("../images/diningRoom.jpg");
+  right: 14%;
+  width: 35%;
   height: 80%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url("../images/diningRoom.jpg");
+  background-size: auto 100%;
+}
+#menu{
+  background: rgb(61, 32, 5);
+  height: 900px;
+  width: 60%;
+  z-index: 100;
+  position: fixed;
+  top: 5%;
+  left: 20%;
+  opacity: .95;
+}
+#title{
+  font-size: 64px;
+  margin-left: 5%;
 }
