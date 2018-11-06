@@ -16,6 +16,7 @@ ul {
 }
 button{
   background: rgb(138, 136, 37);
+  cursor: pointer;
 }
 h2{
   font-size: 44px;
@@ -96,6 +97,7 @@ body{
   height: 210px;
   border: ridge;
   display: block;
+  cursor: pointer;
 }
 .menuItem{
   position: relative;
@@ -216,3 +218,4 @@ body{
   font-size: 144px;
   font-family: 'Spicy Rice', cursive;
 }
+
