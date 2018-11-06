@@ -62,7 +62,7 @@ $(function(){
     $("#menu").addClass("hide");
     console.log("this name: ",$(this).attr("data-name"));
     $("#orderName").removeClass("hide");
-    $("#orderName").addClass("show");
+    $("#orderName").addClass("showOrder");
     $("#burgerOrder").text($(this).attr("data-name"));
     burgerOrder = $(this).attr("data-name");
   })

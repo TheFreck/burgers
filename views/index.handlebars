@@ -6,7 +6,7 @@
 
 <div class="triGrid">
   <section id="kitchen">
-  <h2>Kitchen</h2>
+  <h2 id="kitchenTitle">Kitchen</h2>
   <ul>
     {{#each burgers}}
       {{#unless served}}
@@ -19,7 +19,7 @@
   <button id="menuBtn"><h1>M</h1><br><h1>E</h1><br><h1>N</h1><br><h1>U</h1></button>
 
   <section id="diningRoom">
-  <h2>Dining Room</h2>
+  <h2 id="diningRoomTitle">Dining Room</h2>
   <div>
   <ul>
     {{#each burgers}}
@@ -34,14 +34,15 @@
 
 <div id="menu" class="hide"></div>
 <div id="orderName" class="hide">
-  <h2>You ordered: <span id="burgerOrder">BURGER</span></h2>
+  <h2 class="yourOrder">You ordered: <span id="burgerOrder">BURGER</span></h2>
   <form class="create-form">
 
     <div class="form-group">
       <label for="ca">What's the name on the order?</label>
+      <br><br>
       <input type="text" id="ca" name="name">
     </div>
 
-    <button type="submit">Add Order</button>
+    <button id="submitOrder" type="submit">Add Order</button>
   </form>
 </div>

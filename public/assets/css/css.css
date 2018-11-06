@@ -1,26 +1,32 @@
 li {
-  padding: 5px;
+  padding: .5% .5% .5% 5%;
   margin: 5%;
-  background: #cc5ec7;
+  background: #c2b79d;
   width: 85%;
   height: 100px;
   position: relative;
   line-height: 500%;
   opacity: .9;
+  box-shadow: 5px 5px 20px 5px gray;
+  display: grid;
+  grid-template-columns: 68% 16% 16%;
 }
 ul {
   list-style: none;
 }
 button{
-  background: rgb(102, 138, 37);
+  background: rgb(138, 136, 37);
 }
 h2{
   font-size: 44px;
 }
 body{
-  background: rgb(172, 140, 0);
+  background: rgb(161, 124, 24);
 }
 
+.form-group{
+  font-size: 34px;
+}
 .triGrid{
   display: grid;
   grid-template-columns: 45% 10% 45%;
@@ -48,6 +54,7 @@ body{
   background-size: contain;
   right: 0;
   border: raised;
+  display: inline-block;
 }
 .serveIt{
   background: green;
@@ -55,6 +62,7 @@ body{
   background-size: contain;
   border: raised;
   right: 105px;
+  display: inline-block;
 }
 .sendItBack{
   background: red;
@@ -62,6 +70,7 @@ body{
   background-size: auto 100%;
   border: raised;
   right: 105px;
+  display: inline-block;
 }
 .cashIt{
   background: green;
@@ -69,10 +78,15 @@ body{
   background-size: contain;
   border: raised;
   right: 0;
+  display: inline-block;
 }
 .show{
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
+}
+.showOrder{
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 .hide{
   display: none;
@@ -88,15 +102,34 @@ body{
   width: 90%;
   left: 5%;
 }
+.orderName{
+  font-size: 26px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
 .menuName{
   font-size: 34px;
-  position: absolute;
   line-height: 1;
+  color: yellowgreen;
+  font-family: 'Spicy Rice', cursive;
+}
+.menuDescription{
+  font-size: 28px;
+  color: yellow;
+  text-shadow: 2px 2px 4px #a59494, -4px 4px 8px rgb(27, 18, 3);
+  font-family: 'Indie Flower', cursive;
 }
 .title{
   font-size: 44px;
   margin-left: 5%;
   font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px 4px #a59494, -4px 4px 8px rgb(27, 18, 3);
+}
+.yourOrder{
+  margin: 5%;
+}
+.create-form{
+  margin: 5%;
 }
 .menuImg,
 .menuItem,
@@ -108,32 +141,54 @@ body{
 .cashIt,
 .tossIt,
 .serveIt{
-  position: absolute;
   width: 100px;
   height: 100px;
-  color: white;
+  color: rgb(216, 210, 183);
+  position: relative;
+  left: 0;
 }
 
+#submitOrder{
+  font-size: 34px;
+}
+#ca{
+  font-size: 34px;
+}
+#kitchenTitle,
+#diningRoomTitle{
+  font-family: 'Indie Flower', cursive;
+  margin-left: 1%;
+  font-size: 42px;
+  text-shadow: 2px 2px 4px #a59494, -3px 3px 6px rgb(27, 18, 3);
+}
 #menuBtn{
-  width: 100%;
+  width: 80%;
   height: 700px;
   font-size: 64px;
+  border: raised;
+  border-width: 5px;
+  margin: 0 10%;
 }
 #orderName{
-  width: 600px;
-  height: 500px;
-  background: darkred;
+  width: 50%;
+  background: rgb(132, 134, 148);
+  opacity: .97;
   position: fixed;
   top: 15%;
   width: 50%;
   left: 25%;
+  text-shadow: -2px 2px 3px rgb(27,18,3);
+  padding: 5%;
+  border-left: ridge;
+  border-right: ridge;
+  border-color: rgb(47, 36, 0);
 }
-
 #kitchen{
   position: relative;
   width: 100%;
   height: 700px;
   background-image: url("../images/stainlessSteel.jpg");
+  border: ridge;
 }
 #diningRoom{
   position: relative;
@@ -141,6 +196,7 @@ body{
   height: 700px;
   background-image: url("../images/diningRoom.jpg");
   background-size: auto 100%;
+  border: ridge;
 }
 #menu{
   background: rgb(61, 32, 5);
@@ -151,6 +207,10 @@ body{
   top: 5%;
   left: 20%;
   opacity: .95;
+  border: ridge;
+  border-color: rgb(21, 77, 42);
+  border-width: 10px;
+  overflow: auto;
 }
 #logo{
   font-size: 144px;
