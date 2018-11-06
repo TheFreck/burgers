@@ -23,32 +23,18 @@ body{
 .label {
   font-weight: bold;
 }
-
 .create-update-form {
   padding: 5px;
   margin: 5px;
   background: aqua;
 }
-
 .form-group {
   margin-bottom: 5px;
 }
-
 .icon{
   width: 50px;
   height: 50px;
 }
-
-.sendItBack,
-.cashIt,
-.tossIt,
-.serveIt{
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  color: white;
-}
-
 .tossIt{
   background: red;
   background-image: url("../images/tossIt.png");
@@ -56,7 +42,6 @@ body{
   right: 0;
   border: raised;
 }
-
 .serveIt{
   background: green;
   background-image: url("../images/serveIt.png");
@@ -64,7 +49,6 @@ body{
   border: raised;
   right: 105px;
 }
-
 .sendItBack{
   background: red;
   background-image: url("../images/sendItBack.png");
@@ -72,7 +56,6 @@ body{
   border: raised;
   right: 105px;
 }
-
 .cashIt{
   background: green;
   background-image: url("../images/cashIt.png");
@@ -80,7 +63,6 @@ body{
   border: raised;
   right: 0;
 }
-
 .show{
   display: grid;
   grid-template-columns: 24% 24% 24% 24%;
@@ -88,14 +70,6 @@ body{
 .hide{
   display: none;
 }
-
-.menuImg,
-.menuItem,
-.menuName,
-.menuDescription{
-  margin: 5%;
-}
-
 .menuImg{
   width: 210px;
   height: 210px;
@@ -112,7 +86,26 @@ body{
   position: absolute;
   line-height: 1;
 }
-
+.title{
+  font-size: 44px;
+  margin-left: 5%;
+  font-family: 'Indie Flower', cursive;
+}
+.menuImg,
+.menuItem,
+.menuName,
+.menuDescription{
+  margin: 5%;
+}
+.sendItBack,
+.cashIt,
+.tossIt,
+.serveIt{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: white;
+}
 
 #menuBtn{
   margin-left: 5%;
@@ -154,7 +147,7 @@ body{
   left: 20%;
   opacity: .95;
 }
-#title{
-  font-size: 64px;
-  margin-left: 5%;
+#logo{
+  font-size: 144px;
+  font-family: 'Spicy Rice', cursive;
 }
