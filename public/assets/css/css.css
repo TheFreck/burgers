@@ -1,17 +1,18 @@
 li {
   padding: 5px;
   margin: 5%;
-  background: #cc9c5e;
+  background: #cc5ec7;
   width: 85%;
   height: 100px;
   position: relative;
   line-height: 500%;
-  opacity: .8;
+  opacity: .9;
 }
 ul {
   list-style: none;
 }
 button{
+  background: rgb(102, 138, 37);
 }
 h2{
   font-size: 44px;
@@ -20,6 +21,12 @@ body{
   background: rgb(172, 140, 0);
 }
 
+.triGrid{
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  width: 90%;
+  margin: 0 5%;
+}
 .label {
   font-weight: bold;
 }
@@ -108,9 +115,9 @@ body{
 }
 
 #menuBtn{
-  margin-left: 5%;
-  width: 100px;
-  height: 65px;
+  width: 100%;
+  height: 700px;
+  font-size: 64px;
 }
 #orderName{
   width: 600px;
@@ -123,17 +130,15 @@ body{
 }
 
 #kitchen{
-  position: fixed;
-  left: 14%;
-  width: 35%;
-  height: 80%;
+  position: relative;
+  width: 100%;
+  height: 700px;
   background-image: url("../images/stainlessSteel.jpg");
 }
 #diningRoom{
-  position: fixed;
-  right: 14%;
-  width: 35%;
-  height: 80%;
+  position: relative;
+  width: 100%;
+  height: 700px;
   background-image: url("../images/diningRoom.jpg");
   background-size: auto 100%;
 }
