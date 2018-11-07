@@ -3,7 +3,7 @@ var burgerMenu = [{
   description: "It's bigger than you'll find anywhere else"
 },{
   name: "Bigger Burger",
-  description: "If you want something biger than the Big Burger this is is"
+  description: "If you want something biger than the Big Burger this is it"
 },{
   name: "Giganto Burger",
   description: "Here we're moving away from reasonable"
