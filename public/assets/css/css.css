@@ -16,7 +16,6 @@ ul {
 }
 button{
   background: rgb(138, 136, 37);
-  cursor: pointer;
 }
 h2{
   font-size: 44px;
@@ -97,7 +96,7 @@ body{
   height: 210px;
   border: ridge;
   display: block;
-  cursor: pointer;
+  cursor: url("http://www.rw-designer.com/cursor-extern.php?id=48103"),auto;
 }
 .menuItem{
   position: relative;
@@ -170,6 +169,7 @@ body{
   border: raised;
   border-width: 5px;
   margin: 0 10%;
+  cursor: url("http://www.rw-designer.com/cursor-extern.php?id=48103"),auto;
 }
 #orderName{
   width: 50%;
