@@ -191,6 +191,7 @@ body{
   height: 700px;
   background-image: url("../images/stainlessSteel.jpg");
   border: ridge;
+  overflow: auto;
 }
 #diningRoom{
   position: relative;
@@ -199,6 +200,7 @@ body{
   background-image: url("../images/diningRoom.jpg");
   background-size: auto 100%;
   border: ridge;
+  overflow: auto;
 }
 #menu{
   background: rgb(61, 32, 5);
